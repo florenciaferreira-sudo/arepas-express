@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comuna 13 — Arepas Express</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">AREPAS<span>EXPRESS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown">
+        <a href="#" class="active">Barrios ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="comuna13.html">Comuna 13</a></li>
+          <li><a href="aranjuez.html">Aranjuez</a></li>
+          <li><a href="prado.html">Prado</a></li>
+          <li><a href="provenza.html">Provenza</a></li>
+        </ul>
+      </li>
+      <li><a href="juego.html">Juego</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="fuentes.html">Fuentes</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+<main>
+    <section class="barrio-hero c13-hero">
+    <div class="pixel-grid"></div>
+    <div class="barrio-hero-content">
+      <p class="hero-eyebrow">Arepas Express</p>
+      <h1>COMUNA 13</h1>
+      <p class="barrio-desc">El repartidor arranca desde abajo, corriendo y volando por las laderas empinadas de San Javier. Entre murales enormes y escaleras eléctricas, cada entrega es una carrera contra el tiempo.</p>
+    </div>
+    <div class="hero-img-placeholder large">
+      <img src="img/hero-comuna13.png" alt="comuna13" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+  </section>
+
+  <section class="section barrio-intro">
+    <div class="intro-text">
+      <h2>Sobre la Comuna 13</h2>
+      <p>La Comuna 13, también conocida como San Javier, es uno de los territorios más representativos de Colombia cuando se habla de conflicto, resistencia comunitaria y transformación social. Sus calles, antes marcadas por la violencia, hoy son recorridas por visitantes de todo el mundo que vienen a conocer su historia de resiliencia y a admirar su arte urbano. Las escaleras eléctricas, los coloridos murales y las vistas panorámicas de Medellín atraen a turistas y generan oportunidades para la comunidad.</p>
+    </div>
+  </section>
+
+  <section class="section video-section">
+    <h2 class="section-title">Video</h2>
+    <div class="video-player-placeholder" onclick="openPopup('popup-video', 'video1')">
+      <div class="play-btn">▶</div>
+      <p>Ver video del barrio</p>
+    </div>
+  </section>
+
+  <section class="section contenido-section">
+    <h2 class="section-title">Fotografías</h2>
+    <div class="contenido-grid fotos-grid">
+      <div class="contenido-card foto-card" onclick="openPopup('popup-foto', 'foto1')">
+        <div class="contenido-thumb foto-thumb" style="padding:0;overflow:hidden;">
+          <img src="img/comuna13-1.jpeg" alt="Fotografía 1" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <p class="contenido-label">Fotografía 1</p>
+      </div>
+      <div class="contenido-card foto-card" onclick="openPopup('popup-foto', 'foto2')">
+        <div class="contenido-thumb foto-thumb" style="padding:0;overflow:hidden;">
+          <img src="img/comuna13-2.jpeg" alt="Fotografía 2" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <p class="contenido-label">Fotografía 2</p>
+      </div>
+      <div class="contenido-card foto-card" onclick="openPopup('popup-foto', 'foto3')">
+        <div class="contenido-thumb foto-thumb" style="padding:0;overflow:hidden;">
+          <img src="img/comuna13-3.jpeg" alt="Fotografía 3" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <p class="contenido-label">Fotografía 3</p>
+      </div>
+      <div class="contenido-card foto-card" onclick="openPopup('popup-foto', 'foto4')">
+        <div class="contenido-thumb foto-thumb" style="padding:0;overflow:hidden;">
+          <img src="img/comuna13-4.jpeg" alt="Fotografía 4" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <p class="contenido-label">Fotografía 4</p>
+      </div>
+    </div>
+  </section>
+  <section class="section contenido-section">
+    <h2 class="section-title">Crónicas</h2>
+    <div class="contenido-grid">
+      <div class="contenido-card" onclick="openPopup('popup-cronica', 'cronica1')"><div class="contenido-thumb cronica-thumb"><span>CRÓN</span></div><p class="contenido-label">Crónica 1</p><p class="contenido-desc">Descripción breve</p></div>
+      <div class="contenido-card" onclick="openPopup('popup-cronica', 'cronica2')"><div class="contenido-thumb cronica-thumb"><span>CRÓN</span></div><p class="contenido-label">Crónica 2</p><p class="contenido-desc">Descripción breve</p></div>
+      <div class="contenido-card" onclick="openPopup('popup-cronica', 'cronica3')"><div class="contenido-thumb cronica-thumb"><span>CRÓN</span></div><p class="contenido-label">Crónica 3</p><p class="contenido-desc">Descripción breve</p></div>
+      <div class="contenido-card" onclick="openPopup('popup-cronica', 'cronica4')"><div class="contenido-thumb cronica-thumb"><span>CRÓN</span></div><p class="contenido-label">Crónica 4</p><p class="contenido-desc">Descripción breve</p></div>
+    </div>
+  </section>
+</main>
+
+<!-- POPUP: DOCUMENTO -->
+<div class="popup-overlay" id="popup-doc" onclick="closePopupOutside(event, 'popup-doc')">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopup('popup-doc')">✕</button>
+    <div class="popup-video-placeholder"><div class="play-btn">▶</div><p>Video del documento</p></div>
+    <h3 class="popup-title">Título del Documento</h3>
+    <p class="popup-desc">Descripción o texto del documento.</p>
+    <div class="popup-grid"><div class="popup-thumb"><span>DOC</span></div><div class="popup-thumb"><span>DOC</span></div><div class="popup-thumb"><span>DOC</span></div></div>
+  </div>
+</div>
+
+<!-- POPUP: FOTOGRAFÍA -->
+<div class="popup-overlay" id="popup-foto" onclick="closePopupOutside(event, 'popup-foto')">
+  <div class="popup-box popup-foto-box">
+    <button class="popup-close" onclick="closePopup('popup-foto')">✕</button>
+    <div class="popup-foto-main">
+      <button class="foto-nav prev" onclick="prevFoto()">‹</button>
+      <div class="foto-display"><span>Fotografía</span></div>
+      <button class="foto-nav next" onclick="nextFoto()">›</button>
+    </div>
+    <p class="popup-foto-caption">Descripción de la fotografía</p>
+  </div>
+</div>
+
+<!-- POPUP: CRÓNICA -->
+<div class="popup-overlay" id="popup-cronica" onclick="closePopupOutside(event, 'popup-cronica')">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopup('popup-cronica')">✕</button>
+    <div class="popup-video-placeholder"><div class="play-btn">▶</div><p>Audio de la crónica</p></div>
+    <h3 class="popup-title">Título de la Crónica</h3>
+    <div class="popup-cronica-text"><p>Texto de la crónica. Reemplazá con el contenido real.</p></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-logo">AREPAS EXPRESS</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

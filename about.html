@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Arepas Express</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">AREPAS<span>EXPRESS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown">
+        <a href="#">Barrios ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="comuna13.html">Comuna 13</a></li>
+          <li><a href="aranjuez.html">Aranjuez</a></li>
+          <li><a href="prado.html">Prado</a></li>
+          <li><a href="provenza.html">Provenza</a></li>
+        </ul>
+      </li>
+      <li><a href="juego.html">Juego</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="fuentes.html">Fuentes</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+
+
+<main>
+  <section class="section about-section">
+    <div class="about-grid">
+      <div class="about-text">
+        <h1>Sobre el Proyecto</h1>
+        <p class="about-body">
+          Arepas Express es un videojuego endless runner que sigue a un repartidor de Medellín intentando sobrevivir al día a día. La ciudad, las personas, el clima, los animales e incluso la policía se convierten en obstáculos constantes mientras el personaje avanza por los barrios más representativos de la ciudad.
+        </p>
+        <p class="about-body">
+          El proyecto no busca ser solo un juego, sino una experiencia que invite a conocer Medellín, recorrer sus barrios y reflexionar sobre la realidad de los repartidores de plataformas digitales en Colombia, un trabajo marcado por la informalidad y la precarización.
+        </p>
+        <p class="about-body">
+          Inspirado en referentes como el dinosaurio de Google y Cookie Clicker, el juego propone una mecánica simple y accesible —saltar y agacharse— que se enriquece con una narrativa visual y cultural profundamente local.
+        </p>
+      </div>
+
+      <div class="about-team">
+        <h2>Equipo</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="team-avatar"><span>👤</span></div>
+            <div>
+              <p class="team-name">Mario</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-avatar"><span>👤</span></div>
+            <div>
+              <p class="team-name">David</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-avatar"><span>👤</span></div>
+            <div>
+              <p class="team-name">Florencia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-logo">AREPAS EXPRESS</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
